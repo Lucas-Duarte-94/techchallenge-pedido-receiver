@@ -16,8 +16,8 @@ public class PedidoImplementation implements PedidoGateway {
     }
 
     @Override
-    public Pedido createPedido(CreatePedidoDTO createPedidoDTO) {
-        return this.createPedidoUseCase.createPedido(createPedidoDTO);
+    public void createPedido(CreatePedidoDTO createPedidoDTO) {
+        this.createPedidoUseCase.createPedido(createPedidoDTO);
     }
 
     @Override

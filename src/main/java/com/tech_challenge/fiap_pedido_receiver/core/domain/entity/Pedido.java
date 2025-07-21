@@ -11,9 +11,9 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Pedido {
-    List<ItemPedidoDTO> itens;
-    String paymentInfo;
-    String userId;
+    private List<ItemPedidoDTO> itens;
+    private String paymentInfo;
+    private String userId;
 }
 
 

@@ -14,8 +14,14 @@ public class RabbitMQProducerConfig {
     @Value("${app.rabbitmq.exchange:order.exchange}")
     private String exchangeName;
 
+//    @Value("${app.rabbitmq.queue:order.queue}")
+//    private String queueName;
+//
+//    @Value("${app.rabbitmq.routing-key:order.notification}")
+//    private String routingKey;
+
     @Bean
-    public DirectExchange appointmentExchange() {
+    public DirectExchange pedidoExchange() {
         return new DirectExchange(exchangeName);
     }
 
