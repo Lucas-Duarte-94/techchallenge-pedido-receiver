@@ -1,11 +1,8 @@
 package com.tech_challenge.fiap_pedido_receiver.core.usecase;
 
-import com.tech_challenge.fiap_pedido_receiver.core.domain.entity.Pedido;
 import com.tech_challenge.fiap_pedido_receiver.core.dto.CreatePedidoDTO;
 import com.tech_challenge.fiap_pedido_receiver.core.gateway.PedidoGateway;
 import org.springframework.stereotype.Service;
-
-import java.util.List;
 
 @Service
 public class PedidoImplementation implements PedidoGateway {
@@ -18,15 +15,5 @@ public class PedidoImplementation implements PedidoGateway {
     @Override
     public void createPedido(CreatePedidoDTO createPedidoDTO) {
         this.createPedidoUseCase.createPedido(createPedidoDTO);
-    }
-
-    @Override
-    public Pedido findPedido(String idPedido) {
-        return null;
-    }
-
-    @Override
-    public List<Pedido> findPedidos_byUserId(String userId) {
-        return List.of();
     }
 }
